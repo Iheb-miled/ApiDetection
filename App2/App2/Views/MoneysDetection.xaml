@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Views.MoneysDetection">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Image x:Name="PhotoImage" HeightRequest="200" IsVisible="False" WidthRequest="200"/>
+
+            <StackLayout  Padding="15" IsVisible="False" x:Name="LesTags" >
+                <Label x:Name="TagN1" FontSize="Title" TextColor="Black" BackgroundColor="White" />
+                <Label x:Name="TagN2"  FontSize="Medium" TextColor="Black"  />
+                
+            </StackLayout>
+
+            <Button Clicked="CameraButton_Clicked" Text="Prendre photo" Grid.Row="1"/>
+            <Button Clicked="Gallery_Clicked" Text="Choisir une  photo" Grid.Row="1"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

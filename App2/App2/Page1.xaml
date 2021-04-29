@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="App2.Page1">
+    <ContentPage.Content>
+        <Grid>
+               
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+       
+        <StackLayout Padding="15">
+            <Image x:Name="PhotoImage" HeightRequest="200" IsVisible="False" WidthRequest="200"/> 
+            
+            <StackLayout  Padding="15" IsVisible="False" x:Name="LesTags" >
+                    <Label Text="{Binding tagName1}" FontSize="Title" TextColor="Black" BackgroundColor="White" />
+                    <Label Text="{Binding tagName2}" FontSize="Medium" TextColor="Black"  />                    
+            </StackLayout>
+
+            <Button Clicked="CameraButton_Clicked" Text="Prendre photo" Grid.Row="1"/>
+        
+
+       
+           
+
+
+
+
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
